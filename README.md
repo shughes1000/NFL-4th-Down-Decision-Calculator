@@ -10,7 +10,7 @@ Objectives:
 1) Make a custom expected points model for first downs. 
 2) Make a model for field goal conversion percentage with a given field goal distance.
 3) Make a model that estimates expected points on punt play when given the yardline.
-4) Make a model that estimates conversion percentage on fourth dwons given the yardline and yards for a first
+4) Make a model that estimates conversion percentage on fourth downs given the yardline and yards for a first
 down.
 5) Make models for yards gained on a fourth down attempt when given the yardline, yards for first down, and 
 whether the play converts or not. 
