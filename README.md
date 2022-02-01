@@ -1,4 +1,4 @@
-Using public data from NFL games I designed a predictive model that suggests whether to punt, kick a field
+Using public data from NFL games, I designed a predictive model that suggests whether to punt, kick a field
 goal, or go for it on fourth down when given the field position and yards needed for a first down. 
 
 I acquired the play by play data used for this project from Ben Baldwin of the NFLfastR community. Note that 
