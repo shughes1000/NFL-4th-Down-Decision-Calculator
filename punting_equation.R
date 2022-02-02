@@ -38,9 +38,9 @@ punt_equation(90)
 ggplot(data = punt_test_agg,
        mapping = aes(x = start,
                      y = mean))+
-  ggtitle("Expected Points After Punt by Punting Field Position", subtitle = "2010 to 2020, Plotted on Test Data")+
-  xlab("Punting Team Distance From Opposing Endzone Before Punt")+
-  ylab("Expected Points After Punt")+
+  ggtitle("Expected Points after Punt by Punting Field Position", subtitle = "2010 to 2020, Plotted on Test Data")+
+  xlab("Punting Team Distance from Opposing Endzone before Punt (Yards)")+
+  ylab("Punting Team Expected Points after Punt")+
   geom_point(aes(size = count))+
   geom_line(aes(y = punt_equation(start),
                 size = 3, colour = "Model"))

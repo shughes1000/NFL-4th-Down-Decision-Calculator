@@ -271,8 +271,8 @@ fg_test_agg = fg_test_agg[order(fg_test_agg$kick_distance), ]
 ggplot(data = fg_test_agg,
        mapping = aes(x = kick_distance,
                      y = percentage))+
-  ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020, Plotted On Test Data")+
-  xlab("Distance")+
+  ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020, Plotted on Test Data")+
+  xlab("Distance (Yards)")+
   ylab("Make Percentage")+
   geom_point(aes(size = count))+
   geom_line(aes(y = fg_equation(kick_distance),
@@ -288,7 +288,7 @@ ggplot(data = fg_test_agg,
        mapping = aes(x = kick_distance,
                      y = percentage))+
   ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020, Plotted on Test Data")+
-  xlab("Distance")+
+  xlab("Distance (Yards)")+
   ylab("Make Percentage")+
   geom_point(aes(size = count))+
   geom_line(aes(y = fg_equation(kick_distance),
