@@ -271,7 +271,7 @@ fg_test_agg = fg_test_agg[order(fg_test_agg$kick_distance), ]
 ggplot(data = fg_test_agg,
        mapping = aes(x = kick_distance,
                      y = percentage))+
-  ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020")+
+  ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020, Plotted On Test Data")+
   xlab("Distance")+
   ylab("Make Percentage")+
   geom_point(aes(size = count))+
@@ -283,3 +283,13 @@ ggplot(data = fg_test_agg,
                 size = 7, colour = "exp"))
 
 # Visually, the polynomial clearly has the best fit on the test data
+
+ggplot(data = fg_test_agg,
+       mapping = aes(x = kick_distance,
+                     y = percentage))+
+  ggtitle("Field Goal Percentage by Distance", subtitle = "2010 to 2020, Plotted on Test Data")+
+  xlab("Distance")+
+  ylab("Make Percentage")+
+  geom_point(aes(size = count))+
+  geom_line(aes(y = fg_equation(kick_distance),
+                size = 7, colour = "cubed"))

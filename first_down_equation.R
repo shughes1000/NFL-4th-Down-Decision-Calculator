@@ -37,9 +37,9 @@ fd_equation(10)
 ggplot(data = fd_test_agg,
        mapping = aes(x = distance,
                      y = mean))+
-  ggtitle("Expected Points After Punt by Punting Field Position", subtitle = "2010 to 2020, Test Data")+
-  xlab("Punting Team Distance From Opposing Endzone Before Punt")+
-  ylab("Expected Points After Punt")+
+  ggtitle("Expected Points For First and 10/Goal By Field Position", subtitle = "2010 to 2020, Plotted On Test Data")+
+  xlab("Yards Needed For Touchdown")+
+  ylab("Expected Points")+
   geom_point(aes(size = count))+
   geom_line(aes(y = fd_equation(distance),
                 size = 3, colour = "Model"))
